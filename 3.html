@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p1 id="result1"></p1>
+<p2 id="result2"></p2>
+<p3 id="result2"></p3>
+<p4 id="result4"></p4>
+<script>
+        let result1 = "";
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 0; j < i; j++) {
+                result1 += "*";
+            }
+            result1 += "</br>"
+        }
+        document.getElementById("result1").innerHTML = result1
+
+
+
+        let result2 = "";
+        for (let i = 5; i >= 1; i--) {
+            for (let j = 0; j < i; j++) {
+                result2 += "*";
+            }
+            result2 += "</br>"
+        }
+        document.getElementById("result2").innerHTML = result2
+
+
+
+        let result3 = "";
+        for (let i = 5; i >=1; i--) {
+            for (let j = 0; j < i; j++) {
+                if (j <= 5 - i) {
+                    result3 += " "
+                } else {
+                    result3 += "*";
+                }
+            }
+            result3 += "</br>"
+        }
+
+        document.getElementById("result3").innerHTML = result3
+
+        let result4 = "";
+        for (let i = 1; i <=5; i++) {
+            for (let j = 0; j < i; j++) {
+                if (j <= 5 - i) {
+                    result4 += " "
+                } else {
+                    result4 += "*";
+                }
+            }
+            result4 += "</br>"
+        }
+
+        document.getElementById("result4").innerHTML = result4
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+        let result = "";
+        let cd = 21;
+        let cr = 7;
+        for (let i = 1; i <= cr; i++) {
+            for (let j = 1; j <= cd; j++) {
+                if (j != 1 && j != cd && i != 1 && i != cr) {
+                    result += "&nbsp;&nbsp;";
+                } else {
+                    result += "*";
+                }
+            }
+            result += "<br>"
+        }
+        document.getElementById("result").innerHTML = result;
+</script>
+</body>
+</html>
